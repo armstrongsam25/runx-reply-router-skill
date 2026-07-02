@@ -70,3 +70,18 @@ The append event call is modeled as an ungated CAS append:
 
 The resulting suppression record is the compliance block consumed by the next
 send-as preflight.
+
+## Harness
+
+The skill ships with two inline harness cases:
+
+- `sealed_unsubscribe_suppression`: a sealed send receipt and an unsubscribe
+  reply produces a sealed suppression append with `graph_closed`.
+- `stop_ambiguous_or_unsealed`: an unsealed receipt or ambiguous reply stops at
+  `needs_agent` with no suppression write and no routing decision.
+
+Run locally:
+
+```bash
+runx harness ./skills/reply-router --json
+```
