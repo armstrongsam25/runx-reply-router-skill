@@ -32,7 +32,7 @@
     "verified_by": "GitHub API user/starred/runxhq/runx",
     "result": "204 No Content"
   },
-  "summary": "reply-router classifies inbound replies against a sealed original_send_receipt and suppression_policy. Clear unsubscribe replies append a recipient-keyed suppression event via an ungated CAS append_event against registry:runx/data-store@0.1.2; affirmative replies emit a bounded runx.reply.routing.v1 decision naming a separate governed send-as run; ambiguous or unsealed receipts stop at a human lane. The skill never sends a message.",
+  "summary": "reply-router classifies inbound replies against a sealed original_send_receipt and suppression_policy. Clear unsubscribe replies append a recipient-keyed suppression event via an ungated CAS append_ev",
   "observations": [
     {
       "id": "runx_version",
@@ -119,15 +119,9 @@
       ]
     },
     "command": "runx skill armstrongsam25/reply-router@sha-0625cc484acf dogfood --registry https://api.runx.ai --input-json ... --receipt-dir receipts --json",
-    "receipt_ref": "runx:receipt:sha256:ee9832472e7f25e1804f497efdb96bc716520607cdb80ef4774854d8f2ec65f0",
+    "receipt_ref": "runx:receipt:sha256:310af759f520431a89f165648226d87f3527dc6524e649787f31e59e9114a045",
     "receipt_id": "sha256:ee9832472e7f25e1804f497efdb96bc716520607cdb80ef4774854d8f2ec65f0",
-    "verify_verdict": {
-      "valid": true,
-      "digest": "valid",
-      "content_address": "valid",
-      "signature": "valid",
-      "kid": "runx-demo-key"
-    },
+    "verify_verdict": "valid",
     "harness_cases": [
       {
         "name": "sealed_unsubscribe_suppression",

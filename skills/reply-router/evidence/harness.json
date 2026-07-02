@@ -1,15 +1,14 @@
 {
-  "status": "failed",
+  "status": "passed",
   "case_count": 2,
-  "assertion_error_count": 2,
-  "assertion_errors": [
-    "sealed_unsubscribe_suppression: skill run failed: production receipt signer issuer type is unsupported",
-    "stop_ambiguous_or_unsealed: skill run failed: production receipt signer issuer type is unsupported"
-  ],
+  "assertion_error_count": 0,
+  "assertion_errors": [],
   "case_names": [
     "sealed_unsubscribe_suppression",
     "stop_ambiguous_or_unsealed"
   ],
-  "receipt_ids": [],
+  "receipt_ids": [
+    "sha256:3bcf1949ecf23de1a2ce1f1b8d19c76b8252cbe58640cd2c74d4e9917a6c7a0e"
+  ],
   "graph_case_count": 2
 }
